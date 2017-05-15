@@ -1,0 +1,25 @@
+{
+  "name": "shopback-calculator",
+  "version": "1.0.0",
+  "description": "Shopback Commission and Payment calculator",
+  "main": "shopback-calculator.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/manjeersrujan/Sample-Node-cli"
+  },
+  "dependencies": {
+    "colors": "1.1.2",
+    "commander":"2.9.0",
+    "fs":"0.0.1-security",
+    "speedr":"0.3.1",
+    "mocha": "3.3.0",
+    "assert": "^1.4.1",
+    "chai": "3.5.0"
+
+  },
+  "author": "Manjeer Srujan",
+  "license": "ISC"
+}
