@@ -1,6 +1,8 @@
 /**
- * Created by z001v3f on 5/13/17.
+ * Created by Manjeer on 5/13/17.
+ *  This is implementation of spend command
  */
+
 
 /*
 Following map's meaning: <If all amount are above this> : <Award cashback is this much % of maximum>
@@ -14,6 +16,9 @@ var awardMap = new speedr.Map({
     0: 5
 }, true);
 
+/*
+Handle method gets all CLI arguments and return result
+ */
 exports.handle = function (args) {
 
 
@@ -51,6 +56,10 @@ exports.handle = function (args) {
 };
 
 
+
+/*
+ Description to be displayed in help
+ */
 exports.description = function (args) {
     return "Return cashback awarded rounded to 2 decimal places";
 };

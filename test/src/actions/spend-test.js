@@ -2,10 +2,6 @@
  * Created by z001v3f on 5/13/17.
  */
 
-/*
-Following map's meaning: <If all amount are above this> : <Award cashback is this much % of maximum>
- */
-
 'use strict';
 var spend = require('../../../src/actions/spend');
 const assert = require('assert');

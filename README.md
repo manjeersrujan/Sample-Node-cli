@@ -4,11 +4,7 @@ I am new to NodeJS and this is my first program. I may not be following standard
 
 # Description
 This code used "commander" module to implement CLI with proper error handling, ability to add more commands on fly without making changes to exiting code.
-The actions folder contains .js files and each of them corresponding to a command that is supported. To add one more command, craete a .js file with <command_name>.js format and implement following methods.
-The functionality of the tool, help gets updated on fly with new command.
-
-    handle(args)
-    description()
+The actions folder contains .js files and each of them corresponding to a command that is supported.
 
 # Installation
     cd <code folder(the directory where package.json exists)>
@@ -22,3 +18,18 @@ The functionality of the tool, help gets updated on fly with new command.
     node shopback-calculator.js redeem www.shopback.sg
     node shopback-calculator.js spend 10 10 10
     node shopback-calculator.js signup www.shopback.my
+
+# Adding new command
+To add one more command, craete a .js file with <command_name>.js format in "actions" folder  and implement following methods.
+The functionality of the tool, help gets updated on fly with new command.
+
+    handle(args)
+    description()
+
+# Help
+    node shopback-calculator.js -h
+    node shopback-calculator.js spend -h
+    node shopback-calculator.js redeem -h
+    node shopback-calculator.js signup -h
+    node shopback-calculator.js <any new command> -h
+

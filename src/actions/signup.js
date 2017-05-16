@@ -1,5 +1,6 @@
 /**
- * Created by z001v3f on 5/13/17.
+ * Created by Manjeer on 5/13/17.
+ *  This is implementation of signup command
  */
 
 
@@ -12,7 +13,9 @@ var awardMap = {
     "www.myshopback.com" : ["USD", 5.00]
 };
 
-
+/*
+ Handle method gets all CLI arguments and return result
+ */
 exports.handle = function (args) {
     if(!!args && args.length >= 1){
         if(!!awardMap[args[0]]){
@@ -26,6 +29,9 @@ exports.handle = function (args) {
     }
 };
 
+/*
+ Description to be displayed in help
+ */
 exports.description = function (args) {
     return "Award corresponding bonus amount with currency";
 };

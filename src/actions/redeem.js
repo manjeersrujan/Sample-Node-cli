@@ -1,7 +1,7 @@
 /**
- * Created by z001v3f on 5/13/17.
+ * Created by Manjeer on 5/13/17.
+ * This is implementation of redeem command
  */
-
 
 var awardMap = {
     "www.shopback.sg": "https://www.shopback.sg",
@@ -13,6 +13,9 @@ var awardMap = {
 };
 
 
+/*
+ Handle method gets all CLI arguments and return result
+ */
 exports.handle = function (args) {
     if(!!args && args.length >= 1){
         if(!!awardMap[args[0]]){
@@ -26,7 +29,9 @@ exports.handle = function (args) {
     }
 };
 
-
+/*
+Description to be displayed in help
+ */
 exports.description = function (args) {
     return "Direct user to visit corresponding websites";
 };
